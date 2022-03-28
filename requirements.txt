@@ -31,7 +31,6 @@ opt-einsum==3.3.0
 protobuf==3.19.4
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-pypiwin32==223
 pyttsx3==2.90
 pywin32==303
 requests==2.27.1
