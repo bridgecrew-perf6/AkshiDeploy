@@ -1,5 +1,4 @@
 import os
-
 import cv2
 import numpy as np
 import pyttsx3
@@ -42,7 +41,7 @@ def gen_frames():
     # # Load weights and them to model
 
     model.load_weights('fer.h5')
-    cap = cv2.VideoCapture(cv2.CAP_V4L2)
+    cap = cv2.VideoCapture(-1)
 
     while True:
 
