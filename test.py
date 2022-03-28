@@ -42,7 +42,7 @@ def gen_frames():
     # # Load weights and them to model
 
     model.load_weights('fer.h5')
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(cv2.CAP_V4L2)
 
     while True:
 
