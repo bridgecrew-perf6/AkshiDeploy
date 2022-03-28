@@ -1,11 +1,11 @@
 import os
-import pyttsx3
-from flask import Flask, render_template, Response, request
-import cv2
-from keras.preprocessing import image
-import numpy as np
-from keras.models import model_from_json
 
+import cv2
+import numpy as np
+import pyttsx3
+from flask import Flask, render_template, Response
+from keras.models import model_from_json
+from keras.preprocessing import image
 
 app = Flask(__name__)
 
@@ -77,9 +77,10 @@ def gen_frames():
                 max_index = int(np.argmax(predictions))
                 emotions = ['angry', 'happy', 'neutral', 'sad']
                 predicted_emotion = emotions[max_index]
-                # text_to_speech(predicted_emotion)
+                text_to_speech(predicted_emotion)
 
-                cv2.putText(frame, predicted_emotion, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (255, 255, 255),2)
+                cv2.putText(frame, predicted_emotion, (int(x), int(y)), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (255, 255, 255),
+                            2)
 
             ret, buffer = cv2.imencode('.jpg', cv2.resize(frame, (1000, 700)))
             frame = buffer.tobytes()
