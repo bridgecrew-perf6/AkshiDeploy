@@ -10,6 +10,7 @@ comtypes==1.1.11
 Flask==2.0.3
 flatbuffers==2.0
 gast==0.5.3
+gunicorn==20.1.0
 google-auth==2.6.2
 google-auth-oauthlib==0.4.6
 google-pasta==0.2.0
