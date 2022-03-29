@@ -49,3 +49,6 @@ urllib3==1.26.9
 Werkzeug==2.0.3
 wrapt==1.14.0
 zipp==3.7.0
+streamlit==1.8.0
+streamlit-webrtc==0.36.1
+
