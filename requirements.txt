@@ -17,6 +17,5 @@ tensorflow-cpu==2.8.0
 tensorflow-io-gcs-filesystem==0.24.0
 wrapt==1.14.0
 zipp==3.7.0
-streamlit==1.8.0
-streamlit-webrtc==0.36.1
+
 
